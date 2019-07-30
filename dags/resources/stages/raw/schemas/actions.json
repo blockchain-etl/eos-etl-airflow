@@ -58,5 +58,10 @@
                 "type": "STRING"
             }
         ]
+    },
+    {
+        "name": "hex_data",
+        "type": "STRING",
+        "description": ""
     }
 ]
