@@ -1,105 +1,85 @@
 [
     {
         "name": "block_hash",
-        "type": "STRING",
-        "description": "Block hash"
+        "type": "STRING"
     },
     {
         "name": "block_number",
-        "type": "INTEGER",
-        "description": ""
+        "type": "INTEGER"
     },
     {
         "name": "block_timestamp",
-        "type": "TIMESTAMP",
-        "description": "Block timestamp"
+        "type": "TIMESTAMP"
     },
     {
         "name": "hash",
         "type": "STRING",
-        "mode": "REQUIRED",
-        "description": "Transaction hash"
+        "mode": "REQUIRED"
     },
     {
         "name": "status",
-        "type": "STRING",
-        "description": "Transaction status"
+        "type": "STRING"
     },
     {
         "name": "cpu_usage_us",
-        "type": "INTEGER",
-        "description": "CPU usage in microsecond"
+        "type": "INTEGER"
     },
     {
         "name": "net_usage_words",
-        "type": "INTEGER",
-        "description": "NET usage in words"
+        "type": "INTEGER"
     },
     {
         "name": "signatures",
         "type": "STRING",
-        "mode": "REPEATED",
-        "description": "Transaction signatures"
+        "mode": "REPEATED"
     },
     {
         "name": "compression",
-        "type": "STRING",
-        "description": ""
+        "type": "STRING"
     },
     {
         "name": "packed_context_free_data",
-        "type": "STRING",
-        "description": ""
+        "type": "STRING"
     },
     {
         "name": "context_free_data",
         "type": "STRING",
-        "mode": "REPEATED",
-        "description": ""
+        "mode": "REPEATED"
     },
     {
         "name": "packed_trx",
-        "type": "STRING",
-        "description": ""
+        "type": "STRING"
     },
     {
         "name": "expiration",
-        "type": "TIMESTAMP",
-        "description": ""
+        "type": "TIMESTAMP"
     },
     {
         "name": "ref_block_num",
-        "type": "STRING",
-        "description": ""
+        "type": "STRING"
     },
     {
         "name": "ref_block_prefix",
-        "type": "STRING",
-        "description": ""
+        "type": "STRING"
     },
     {
         "name": "max_net_usage_words",
-        "type": "INTEGER",
-        "description": "Max number of words for network usage"
+        "type": "INTEGER"
     },
     {
         "name": "max_cpu_usage_ms",
-        "type": "INTEGER",
-        "description": "Max number of microseconds for CPU"
+        "type": "INTEGER"
     },
     {
         "name": "delay_sec",
-        "type": "INTEGER",
-        "description": "Execute transaction delay_sec seconds after including in a block"
+        "type": "INTEGER"
     },
     {
         "name": "deferred",
-        "type": "BOOLEAN",
-        "description": ""
+        "type": "BOOLEAN"
     },
     {
-        "name": "actions_count",
-        "type": "INTEGER",
-        "description": ""
+        "name": "action_count",
+        "type": "INTEGER"
     }
 ]

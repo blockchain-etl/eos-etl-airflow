@@ -1,33 +1,27 @@
 [
     {
         "name": "block_hash",
-        "type": "STRING",
-        "description": "Block hash"
+        "type": "STRING"
     },
     {
         "name": "block_number",
-        "type": "INTEGER",
-        "description": ""
+        "type": "INTEGER"
     },
     {
         "name": "block_timestamp",
-        "type": "TIMESTAMP",
-        "description": "Block timestamp"
+        "type": "TIMESTAMP"
     },
     {
         "name": "transaction_hash",
-        "type": "STRING",
-        "description": "Transaction hash"
+        "type": "STRING"
     },
     {
         "name": "account",
-        "type": "STRING",
-        "description": ""
+        "type": "STRING"
     },
     {
         "name": "name",
-        "type": "STRING",
-        "description": ""
+        "type": "STRING"
     },
     {
         "name": "authorization",
@@ -61,7 +55,6 @@
     },
     {
         "name": "hex_data",
-        "type": "STRING",
-        "description": ""
+        "type": "STRING"
     }
 ]
