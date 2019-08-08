@@ -121,7 +121,7 @@ def build_load_dag(
             dag=dag
         )
 
-        # wait_sensor >> load_operator
+        wait_sensor >> load_operator
         return load_operator
 
     def add_enrich_tasks(task, time_partitioning_field='block_timestamp', dependencies=None):
@@ -255,6 +255,8 @@ def build_load_dag(
                                                       [enrich_blocks_task, enrich_transactions_task])
     verify_transactions_have_latest_task = add_verify_tasks('transactions_have_latest', [enrich_transactions_task])
     verify_actions_have_latest_task = add_verify_tasks('actions_have_latest', [enrich_actions_task])
+    verify_actions_count_task = add_verify_tasks('actions_count',
+                                                      [enrich_transactions_task, enrich_actions_task])
 
     if notification_emails and len(notification_emails) > 0:
         send_email_task = EmailOperator(
@@ -269,6 +271,7 @@ def build_load_dag(
         verify_transactions_count_task >> send_email_task
         verify_transactions_have_latest_task >> send_email_task
         verify_actions_have_latest_task >> send_email_task
+        verify_actions_count_task >> send_email_task
 
     return dag
 
